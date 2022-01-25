@@ -4,16 +4,16 @@ export function ArtList(){
     return(
         <>
             <article className="articulo">
-                <ArtItem codigo="INS400" />
+                <ArtItem codigo="INS400" ruta="images/servilleta1.jpg" />
             </article>
             <article className="articulo">
-                <ArtItem codigo="FLO400" />
+                <ArtItem codigo="FLO400" ruta="images/servilleta2.jpg"/>
             </article>
             <article className="articulo">
-                <ArtItem codigo="ANI400" />
+                <ArtItem codigo="ANI400" ruta="images/servilleta3.jpg"/>
             </article>
             <article className="articulo">
-                <ArtItem codigo="ANI500" />
+                <ArtItem codigo="ANI500" ruta="images/servilleta4.jpg"/>
             </article>
         </>
     );
