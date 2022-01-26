@@ -1,8 +1,12 @@
+import logo from '../assets/images/logo.png'
+import menu_burger from '../assets/images/Menú-hamburguesa900x753.png'
+import lupa from '../assets/images/lupa-de-busqueda.png'
+
 export function Header(){
 return(
         <header>
-            <img src="images/logo.png" alt="Logo Decoupage Online"></img>
-            <img className="menu_burger" src="images/Menú-hamburguesa900x753.png" alt="categorias"></img>
+            <img src={logo} alt="Logo Decoupage Online"></img>
+            <img className="menu_burger" src={menu_burger} alt="categorias"></img>
             <nav>
                 <ul>
                     <li><a href="#">COCINA,FRUTAS Y VERDURAS</a></li>
@@ -15,7 +19,7 @@ return(
                 </ul>                
             </nav>
             <div className="search">
-                <img src="images/lupa-de-busqueda.png" alt="Ingrese codigo de servilleta"></img>
+                <img src={lupa} alt="Ingrese codigo de servilleta"></img>
                 <input name="buscar" type="text"></input>
             </div>
             <div className="search">Login</div>
