@@ -1,10 +1,11 @@
 import { ArtItem } from "./ArtItem";
-import imagen1 from '../assets/images/servilleta1.jpg'
-import imagen2 from '../assets/images/servilleta2.jpg'
-import imagen3 from '../assets/images/servilleta3.jpg'
-import imagen4 from '../assets/images/servilleta4.jpg'
+
 
 export function ArtList(){
+    const imagen1 = './images/servilleta1.jpg'
+    const imagen2 = './images/servilleta2.jpg'
+    const imagen3 = './images/servilleta3.jpg'
+    const imagen4 = './images/servilleta4.jpg'
     return(
         <>
             <article className="articulo">
