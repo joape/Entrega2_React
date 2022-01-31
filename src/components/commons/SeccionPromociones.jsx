@@ -1,7 +1,7 @@
 export function SeccionPromociones(){
     return (
         <section className="promociones">
-                <h2>Promocion de Octubre !!!</h2>
+                <h2>Promocion de Enero !!!</h2>
         </section>
     );
 }
