@@ -171,7 +171,8 @@ a {
     text-align: justify;
 }
 
-.articulos .articulo input[type=button] {
+
+/*.articulos .articulo input[type=button] {
     background-color: #858282;
     border: solid;
     color: #130831;
@@ -179,10 +180,28 @@ a {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-    /*cambia puntero*/
+    /*cambia puntero
     font-family: Tahoma;
     font-weight: bold;
     border-radius: 50px;
+    position: static;
+}*/
+
+.articulos .articulo .vermasbtn {
+    background-color: #858282;
+    width: 120px;
+    color: #130831;
+    padding: 10px 22px;
+    align-self: center;
+    margin: 4px 2px;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.articulos .articulo .vermasbtn:hover {
+    background-color: #525050;
 }
 
 .articulos .detalle {

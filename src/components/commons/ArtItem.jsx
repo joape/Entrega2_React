@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 
 export function ArtItem(props){
- const ruta = props.ruta
+ const codigo = props.codigo
+ //console.log(codigo)
     return(
         <>
-            <Link to={`/detail/${ruta}`} ><img src={ruta} alt="Servilleta1"></img></Link>
-            <h2>Codigo: {props.codigo}</h2>
-            <input type="button" value="Ver Mas"></input>
+            <Link to={`/detail/${codigo}`} ><img src={props.ruta} alt="Servilleta1"></img></Link>
+            <h2>Codigo: {codigo}</h2>            
+            <a href="#" className="vermasbtn" >Ver Mas</a>
         </>
     );
 }
