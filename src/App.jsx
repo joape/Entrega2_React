@@ -1,18 +1,18 @@
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { HeaderSeccion } from "./components/HeaderSeccion";
-import { SeccionPromociones } from "./components/SeccionPromociones";
-import { ArtContainer } from "./components/ArtContainer";
-//import { ArtContainer2 } from "./components/ArtContainer2";
+import { Routes, Route } from "react-router-dom";
+import { Header } from "./components/commons/Header";
+import { Footer } from "./components/commons/Footer";
+import { HomePage } from "./components/pages/HomePage";
+import { ItemDetail } from "./components/pages/ItemDetail";
 
 export function App(){
     return(
         <div className="contenedor">
             <Header />
             <main>
-                <HeaderSeccion />
-                <SeccionPromociones />
-                <ArtContainer />
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/detail" element={<ItemDetail />} />            
+                </Routes>
             </main>
             <Footer />
         </div>

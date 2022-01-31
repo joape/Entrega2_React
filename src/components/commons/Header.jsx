@@ -1,6 +1,6 @@
-import logo from '../assets/images/logo.png'
-import menu_burger from '../assets/images/Menú-hamburguesa900x753.png'
-import lupa from '../assets/images/lupa-de-busqueda.png'
+import logo from '../../assets/images/logo.png'
+import menu_burger from '../../assets/images/Menú-hamburguesa900x753.png'
+import lupa from '../../assets/images/lupa-de-busqueda.png'
 
 export function Header(){
 return(

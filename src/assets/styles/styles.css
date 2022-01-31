@@ -68,6 +68,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 20px;
 }
 
 .contenedor header .search img {
