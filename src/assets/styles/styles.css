@@ -202,6 +202,7 @@ a {
 
 .articulos .articulo .vermasbtn:hover {
     background-color: #525050;
+    color: rgb(255, 255, 255)
 }
 
 .articulos .detalle {
