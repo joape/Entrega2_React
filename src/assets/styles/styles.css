@@ -205,6 +205,24 @@ a {
     color: rgb(255, 255, 255)
 }
 
+.articulos .articulo .agregarCarroBtn {
+    background-color: #858282;
+    width: 200px;
+    color: #130831;
+    padding: 10px 22px;
+    align-self: center;
+    margin: 4px 2px;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.articulos .articulo .agregarCarroBtn:hover {
+    background-color: #525050;
+    color: rgb(255, 255, 255)
+}
+
 .articulos .detalle {
     width: 100%;
     max-width: 250px;

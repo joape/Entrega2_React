@@ -2,10 +2,10 @@ import { ArtItem } from "./ArtItem";
 //aca se va a conectar a la BBDD y traera los productos
 
 export function ArtList(){
-    const imagen1 = './images/servilleta1.jpg'
-    const imagen2 = './images/servilleta2.jpg'
-    const imagen3 = './images/servilleta3.jpg'
-    const imagen4 = './images/servilleta4.jpg'
+    const imagen1 = 'servilleta1.jpg'
+    const imagen2 = 'servilleta2.jpg'
+    const imagen3 = 'servilleta3.jpg'
+    const imagen4 = 'servilleta4.jpg'
     return(
         <div className="articulos">
             <article className="articulo">

@@ -11,7 +11,7 @@ export function App(){
             <main>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/detail" element={<ItemDetail />} />            
+                    <Route path="/detail/:codigo/:ruta/:origen/:tam/:cant/:precio" element={<ItemDetail />} />            
                 </Routes>
             </main>
             <Footer />
