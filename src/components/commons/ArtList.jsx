@@ -7,19 +7,11 @@ export function ArtList(){
     const imagen3 = 'servilleta3.jpg'
     const imagen4 = 'servilleta4.jpg'
     return(
-        <div className="articulos">
-            <article className="articulo">
-                <ArtItem codigo="INS400" ruta={imagen1} />
-            </article>
-            <article className="articulo">
+        <div className="articulos">            
+                <ArtItem codigo="INS400" ruta={imagen1}/>         
                 <ArtItem codigo="FLO400" ruta={imagen2}/>
-            </article>
-            <article className="articulo">
                 <ArtItem codigo="ANI400" ruta={imagen3}/>
-            </article>
-            <article className="articulo">
-                <ArtItem codigo="ANI500" ruta={imagen4}/>
-            </article>
+                <ArtItem codigo="ANI500" ruta={imagen4}/>           
         </div>
     );
 }
