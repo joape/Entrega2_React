@@ -15,7 +15,7 @@ export function ArtItemDetail(props){
     //Voy a buscar la informacion al servidor
     useEffect(() => {
         //Fetch / GET a JSON Servilletas
-        api.get("/servilletas/" + {id}).then(function (response) {
+        api.get("/servilletas/" + id).then(function (response) {
         const prod = response.data;
         //console.log(prod);    
         //Cambiamos el estado para que react lo re dibuje
