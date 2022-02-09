@@ -1,15 +1,42 @@
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { api } from "../../api/api";
 
 export function ArtItemDetail(props){
 
     //aca se va a conectar a la BBDD y traera los productos
-    //Preguntarle a profesor paso de parametros (al menos un ID)
-    const {codigo, ruta, origen, tam, cant, precio} = useParams();
-    console.log(codigo, ruta, origen, tam, cant, precio)
+  
+    const {id} = useParams();
+    //console.log(id)//, ruta, origen, tam, cant, precio)
+    
+    const [Producto, setProducto] = useState([]);
+    const [error, setError] = useState("");
+    
+    //Voy a buscar la informacion al servidor
+    useEffect(() => {
+        //Fetch / GET a JSON Servilletas
+        api.get("/servilletas/" + {id}).then(function (response) {
+        const prod = response.data;
+        //console.log(prod);    
+        //Cambiamos el estado para que react lo re dibuje
+        setProducto(prod);
+        });
+    }, []);
+
+    console.log(Producto.id);
+
+
+    const codigo = Producto.codigo;
+    const origen = Producto.origen;
+    const ruta = Producto.imagen;
     const imagen = <img src={"/images/" + ruta} alt="servilleta1"></img>;
+    const tam = Producto.tamaño;
+    const cant = Producto.cantidad;
+    const precio = Producto.precio;
 
     return (
     <div className="articulos">
+        <p>{error}</p>
         <article className="articulo">
             {imagen}
             <h2>Codigo: {codigo}</h2>

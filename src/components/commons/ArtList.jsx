@@ -1,17 +1,33 @@
+import { useEffect, useState } from "react";
+import { api } from "../../api/api";
 import { ArtItem } from "./ArtItem";
 //aca se va a conectar a la BBDD y traera los productos
 
 export function ArtList(){
-    const imagen1 = 'servilleta1.jpg'
-    const imagen2 = 'servilleta2.jpg'
-    const imagen3 = 'servilleta3.jpg'
-    const imagen4 = 'servilleta4.jpg'
+    
+    const [listadoProds, setListadoProds] = useState([]);
+    const [error, setError] = useState("");
+
+    //Voy a buscar la informacion al servidor
+    useEffect(() => {
+        //Fetch / GET a JSON Servilletas
+        api.get("/servilletas").then(function (response) {
+        const prods = response.data;
+        //console.log(prods);    
+        //Cambiamos el estado para que react lo re dibuje
+        setListadoProds(prods);
+        });
+    }, []);
+    
+    const artItems = listadoProds.map(function (prod) {
+        return(
+        <ArtItem key={prod.id} producto={prod} />);
+    });
+   
     return(
-        <div className="articulos">            
-                <ArtItem codigo="INS400" ruta={imagen1}/>         
-                <ArtItem codigo="FLO400" ruta={imagen2}/>
-                <ArtItem codigo="ANI400" ruta={imagen3}/>
-                <ArtItem codigo="ANI500" ruta={imagen4}/>           
+        <div className="articulos">
+                <p>{error}</p>             
+                {artItems}           
         </div>
-    );
+    );  
 }
