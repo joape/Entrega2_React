@@ -6,7 +6,7 @@ export function ArtItem(props){
  const codigo = props.codigo // aca llamo al atributo codigo del objeto producto
  const imagen = props.imagen // aca llamo al atributo imagen del objeto producto
  const ruta = './images/' + imagen
-console.log(id);
+//console.log(id);
     return(
         <article className="articulo">
             <Link to={`/detail/${id}`} ><img src={ruta} alt="Servilleta1"></img></Link>
