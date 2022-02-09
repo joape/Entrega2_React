@@ -6,28 +6,26 @@ import { ArtItem } from "./ArtItem";
 export function ArtList(){
     
     const [listadoProds, setListadoProds] = useState([]);
-    const [error, setError] = useState("");
-
+   
     //Voy a buscar la informacion al servidor
     useEffect(() => {
         //Fetch / GET a JSON Servilletas
         api.get("/servilletas").then(function (response) {
         const prods = response.data;
-        //console.log(prods);    
+       
         //Cambiamos el estado para que react lo re dibuje
         setListadoProds(prods);
         });
     }, []);
-    
-    const artItems = listadoProds.map(function (prod) {
+    /*Funcion que mapea cada elemento del array*/
+    const artItems = listadoProds.map(function (prod) {   
         return(
-        <ArtItem key={prod.id} producto={prod} />);
+         <ArtItem key={prod.id} id={prod.id} codigo={prod.codigo} imagen={prod.imagen} />);/*Aca a cada item de ArtItem le pasaba el objeto entero, no es necesario, solo se pasa id, codigo e imagen*/
     });
    
     return(
-        <div className="articulos">
-                <p>{error}</p>             
-                {artItems}           
+        <div className="articulos">                    
+                {artItems}     {/*Aca llamo a la funcion que esta encima que genera una artItem por cada elemento del array*/}      
         </div>
     );  
 }
