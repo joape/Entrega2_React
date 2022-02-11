@@ -9,5 +9,8 @@
         { "id": 1, "nombre": "Joaquin", "apellido": "Pedrozo", "email": "joaquin.pedrozo@gmail.com" },
 		{ "id": 2, "nombre": "Gustavo", "apellido": "Rodriguez", "email": "gustavo.rodriguez@gmail.com" },
 		{ "id": 3, "nombre": "Senpai", "apellido": "Senpai", "email": "Senpai.academy@gmail.com" }
+	],
+	"promociones": [
+        { "id": 1, "Texto": "Promocion de Enero !!!" }		
 	]
 }
