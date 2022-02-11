@@ -11,6 +11,6 @@
 		{ "id": 3, "nombre": "Senpai", "apellido": "Senpai", "email": "Senpai.academy@gmail.com" }
 	],
 	"promociones": [
-        { "id": 1, "nombre": "Joaquin", "apellido": "Pedrozo", "email": "joaquin.pedrozo@gmail.com" }		
+        { "id": 1, "texto": "Promocion de Enero !!!" }		
 	]
 }
