@@ -1,5 +1,5 @@
-import instagram from '../assets/images/ig_2.png'
-import whatsapp from '../assets/images/whatsapp.png'
+import instagram from '../../assets/images/ig_2.png'
+import whatsapp from '../../assets/images/whatsapp.png'
 
 export function HeaderSeccion(){
     return(
