@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { api } from "../../api/api";
+import { Link } from "react-router-dom";
 
 export function ArtItemDetail(){//aca se va a conectar a la BBDD y traera los productos
   
@@ -34,7 +35,7 @@ export function ArtItemDetail(){//aca se va a conectar a la BBDD y traera los pr
         <article className="articulo">
             {imagen}
             <h2>Codigo: {codigo}</h2>
-            <a href="#" className="agregarCarroBtn" >Agregar al Carro</a>
+            <Link to="#" className="agregarCarroBtn" >Agregar al Carro</Link>
         </article>               
         <article className="detalle">
             <ul>

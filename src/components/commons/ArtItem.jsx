@@ -10,8 +10,8 @@ export function ArtItem(props){
     return(
         <article className="articulo">
             <Link to={`/detail/${id}`} ><img src={ruta} alt="Servilleta1"></img></Link>
-            <h2>Codigo: {codigo}</h2>            
-            <a href="#" className="vermasbtn" >Ver Mas</a>
+            <h2>Codigo: {codigo}</h2>
+            <Link to={`/detail/${id}`} className="vermasbtn" >Ver Mas</Link>
         </article>
     );
 }
